@@ -7,3 +7,9 @@ window.addEventListener('hashchange', () => {
     document.body.classList.remove('page__body--with-menu');
   }
 });
+
+document.querySelector('#id-checkbox').addEventListener('click',
+  function(event) {
+    document.getElementById('output-box').innerHTML += 'Thank YOU!!!';
+    event.preventDefault();
+  }, false);
